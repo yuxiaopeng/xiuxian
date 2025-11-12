@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>韩立境界成长历程与人物关系演变研究</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">   
+    <style>
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #FFFFFF;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 1.25rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            position: relative;
+        }
+        .highlight-gradient-purple {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0), rgba(168, 85, 247, 0.05));
+        }
+        .highlight-gradient-blue {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0), rgba(59, 130, 246, 0.05));
+        }
+        .highlight-gradient-green {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0), rgba(34, 197, 94, 0.05));
+        }
+        .highlight-gradient-orange {
+            background: linear-gradient(135deg, rgba(249, 115, 22, 0), rgba(249, 115, 22, 0.05));
+        }
+        .highlight-gradient-red {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0), rgba(239, 68, 68, 0.05));
+        }
+        .highlight-gradient-teal {
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0), rgba(20, 184, 166, 0.05));
+        }
+        .highlight-gradient-pink {
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0), rgba(236, 72, 153, 0.05));
+        }
+        .highlight-gradient-indigo {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0), rgba(99, 102, 241, 0.05));
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #A855F7;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 1.2rem;
+            width: 2px;
+            height: calc(100% - 0.5rem);
+            background-color: #E5E7EB;
+        }
+        .timeline-item:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <div class="max-w-7xl mx-auto p-4 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+            <!-- 标题卡片 -->
+            <div class="card md:col-span-4 p-8 flex flex-col justify-center items-center text-center relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-purple"></div>
+                <h1 class="text-4xl md:text-5xl font-black text-gray-800 mb-4">韩立境界成长历程与人物关系演变研究</h1>
+                <p class="text-lg text-gray-600 max-w-3xl">从山村少年到三界至尊的修仙传奇</p>
+                <div class="mt-8 flex items-center space-x-6">
+                    <div class="text-center">
+                        <p class="text-3xl font-bold text-purple-600">30000+</p>
+                        <p class="text-sm text-gray-500">最终寿元</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-3xl font-bold text-blue-600">9</p>
+                        <p class="text-sm text-gray-500">主要境界</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-3xl font-bold text-green-600">4</p>
+                        <p class="text-sm text-gray-500">红颜知己</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-3xl font-bold text-orange-600">3</p>
+                        <p class="text-sm text-gray-500">修炼界域</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 韩立简介卡片 -->
+            <div class="card md:col-span-2 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-blue"></div>
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-user-circle text-3xl text-blue-500 mr-4"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">韩立修仙之路概述</h2>
+                </div>
+                <div class="space-y-4 text-gray-700">
+                    <p>韩立，《凡人修仙传》系列小说的主人公，从一个山村少年逐步成长为纵横三界的修仙巨擘，其修仙之路遵循"炼气→筑基→结丹→元婴→化神→炼虚→合体→大乘→渡劫"的经典修仙体系。</p>
+                    <p>韩立的修仙之路具有鲜明的个人特色。他行事低调、不喜欢多管闲事，但底色善良，不好面子不逞英雄，心智坚韧、遇事进退有据，且善随机应变和逃跑，因此有"韩跑跑"的别名。</p>
+                </div>
+                <div class="mt-auto pt-6">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">四灵根伪灵根</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">韩跑跑</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">低调务实</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">心智坚韧</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 境界成长时间轴卡片 -->
+            <div class="card md:col-span-2 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-green"></div>
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-chart-line text-3xl text-green-500 mr-4"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">境界成长时间轴</h2>
+                </div>
+                <div class="space-y-4 text-gray-700">
+                    <div class="timeline-item">
+                        <p class="font-semibold">人界阶段 (10-885岁)</p>
+                        <p class="text-sm">炼气→筑基→结丹→元婴→化神</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="font-semibold">灵界阶段 (1007-2468岁)</p>
+                        <p class="text-sm">炼虚→合体→大乘</p>
+                    </div>
+                    <div class="timeline-item">
+                        <p class="font-semibold">仙界阶段 (11190岁后)</p>
+                        <p class="text-sm">真仙→金仙→太乙→大罗→道祖</p>
+                    </div>
+                </div>
+                <div class="mt-auto pt-6">
+                    <canvas id="ageChart" height="150"></canvas>
+                </div>
+            </div>
+
+            <!-- 人界境界卡片 -->
+            <div class="card md:col-span-1 p-6 flex flex-col justify-between relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-orange"></div>
+                <div>
+                    <i class="fas fa-mountain text-2xl text-orange-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">人界境界</h3>
+                    <p class="text-gray-600 text-sm mb-4">10-885岁，韩立在人界的修炼历程</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">炼气期</span>
+                        <span class="text-sm font-medium text-orange-600">10-21岁</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">筑基期</span>
+                        <span class="text-sm font-medium text-orange-600">25-51岁</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">结丹期</span>
+                        <span class="text-sm font-medium text-orange-600">126-199岁</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">元婴期</span>
+                        <span class="text-sm font-medium text-orange-600">217-360岁</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">化神期</span>
+                        <span class="text-sm font-medium text-orange-600">885岁</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 灵界境界卡片 -->
+            <div class="card md:col-span-1 p-6 flex flex-col justify-between relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-teal"></div>
+                <div>
+                    <i class="fas fa-globe-asia text-2xl text-teal-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">灵界境界</h3>
+                    <p class="text-gray-600 text-sm mb-4">1007-2468岁，灵界的修炼历程</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">化神重修</span>
+                        <span class="text-sm font-medium text-teal-600">1007-1420岁</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">炼虚期</span>
+                        <span class="text-sm font-medium text-teal-600">1420-1567岁</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">合体期</span>
+                        <span class="text-sm font-medium text-teal-600">1567-2468岁</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">大乘期</span>
+                        <span class="text-sm font-medium text-teal-600">2468岁后</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">灵界第一大乘</span>
+                        <span class="text-sm font-medium text-teal-600">11190岁</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 仙界境界卡片 -->
+            <div class="card md:col-span-1 p-6 flex flex-col justify-between relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-purple"></div>
+                <div>
+                    <i class="fas fa-star text-2xl text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">仙界境界</h3>
+                    <p class="text-gray-600 text-sm mb-4">11190岁后，仙界的修炼历程</p>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">真仙期</span>
+                        <span class="text-sm font-medium text-purple-600">11190-13000岁</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">金仙期</span>
+                        <span class="text-sm font-medium text-purple-600">约13000岁</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">太乙期</span>
+                        <span class="text-sm font-medium text-purple-600">约17000岁</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">大罗期</span>
+                        <span class="text-sm font-medium text-purple-600">约20000岁</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-600">道祖境界</span>
+                        <span class="text-sm font-medium text-purple-600">30000+岁</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 关键要素卡片 -->
+            <div class="card md:col-span-1 p-6 flex flex-col justify-between relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-red"></div>
+                <div>
+                    <i class="fas fa-key text-2xl text-red-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">突破关键要素</h3>
+                    <p class="text-gray-600 text-sm mb-4">韩立境界突破的核心因素</p>
+                </div>
+                <div class="space-y-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-flask text-red-500 mt-1 mr-2"></i>
+                        <div>
+                            <p class="font-medium text-gray-800">掌天瓶</p>
+                            <p class="text-xs text-gray-600">加速灵药生长，提供修炼资源</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-book text-red-500 mt-1 mr-2"></i>
+                        <div>
+                            <p class="font-medium text-gray-800">功法体系</p>
+                            <p class="text-xs text-gray-600">青元剑诀、梵圣真魔功等</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-shield-alt text-red-500 mt-1 mr-2"></i>
+                        <div>
+                            <p class="font-medium text-gray-800">实战经验</p>
+                            <p class="text-xs text-gray-600">丰富的战斗经历与风险控制</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-users text-red-500 mt-1 mr-2"></i>
+                        <div>
+                            <p class="font-medium text-gray-800">人物关系</p>
+                            <p class="text-xs text-gray-600">师徒、道侣、盟友的支持</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 人物关系卡片 -->
+            <div class="card md:col-span-2 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-pink"></div>
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-heart text-3xl text-pink-500 mr-4"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">道侣与红颜知己</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-lg p-4 border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-crown text-pink-500"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800">南宫婉</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">韩立一生挚爱，掩月宗结丹中期修士，在血色禁地与韩立结缘，后结为道侣，相伴修仙。</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-gem text-pink-500"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800">紫灵</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">灵界伴侣，韩立在乱星海结识的重要伴侣，独立且追求大道，与韩立一起隐居于黑土仙域。</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-leaf text-pink-500"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800">元瑶</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">生死之交，与韩立在乱星海偶遇，后被青元子收为徒，与韩立有着深厚的血脉羁绊。</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-10 h-10 bg-pink-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-feather text-pink-500"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-800">冰凤</h3>
+                        </div>
+                        <p class="text-sm text-gray-600">重要盟友，与韩立在人界小极宫副本相遇，后联手闯空间节点，共赴灵界，多次帮助韩立突破瓶颈。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 师徒关系卡片 -->
+            <div class="card md:col-span-2 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-indigo"></div>
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-chalkboard-teacher text-3xl text-indigo-500 mr-4"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">师徒关系脉络</h2>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-mountain text-indigo-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 mb-1">李化元</h3>
+                            <p class="text-sm text-gray-600 mb-2">修仙引路人，黄枫谷结丹期修士，将韩立收为亲传弟子，传授青元剑诀。</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="px-2 py-1 bg-indigo-100 text-indigo-800 rounded text-xs">黄枫谷</span>
+                                <span class="px-2 py-1 bg-indigo-100 text-indigo-800 rounded text-xs">青元剑诀</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-brain text-indigo-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 mb-1">大衍神君</h3>
+                            <p class="text-sm text-gray-600 mb-2">亦师亦友的传承者，传授韩立大衍诀这一强大的神识秘术，赠予《大衍宝经》。</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="px-2 py-1 bg-indigo-100 text-indigo-800 rounded text-xs">大衍诀</span>
+                                <span class="px-2 py-1 bg-indigo-100 text-indigo-800 rounded text-xs">神识秘术</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fas fa-clock text-indigo-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-800 mb-1">弥罗老祖</h3>
+                            <p class="text-sm text-gray-600 mb-2">仙界恩师，通过掌天瓶的时空穿梭能力，韩立回到过去拜弥罗老祖为师，获得时间法则指导。</p>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="px-2 py-1 bg-indigo-100 text-indigo-800 rounded text-xs">真言化轮经</span>
+                                <span class="px-2 py-1 bg-indigo-100 text-indigo-800 rounded text-xs">时间法则</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 功法体系卡片 -->
+            <div class="card md:col-span-4 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-blue"></div>
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-scroll text-3xl text-blue-500 mr-4"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">功法体系发展脉络</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg p-6 border border-gray-200">
+                        <h3 class="font-bold text-lg text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-mountain text-orange-500 mr-2"></i>
+                            人界功法体系
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">长春功</span>
+                                <span class="text-xs px-2 py-1 bg-orange-100 text-orange-800 rounded">基础功法</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">青元剑诀</span>
+                                <span class="text-xs px-2 py-1 bg-orange-100 text-orange-800 rounded">核心功法</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">大衍诀</span>
+                                <span class="text-xs px-2 py-1 bg-orange-100 text-orange-800 rounded">神识功法</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">三转重元功</span>
+                                <span class="text-xs px-2 py-1 bg-orange-100 text-orange-800 rounded">进阶功法</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 border border-gray-200">
+                        <h3 class="font-bold text-lg text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-globe-asia text-teal-500 mr-2"></i>
+                            灵界功法体系
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">梵圣真魔功</span>
+                                <span class="text-xs px-2 py-1 bg-teal-100 text-teal-800 rounded">核心功法</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">百脉炼宝诀</span>
+                                <span class="text-xs px-2 py-1 bg-teal-100 text-teal-800 rounded">炼体功法</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">炼神术</span>
+                                <span class="text-xs px-2 py-1 bg-teal-100 text-teal-800 rounded">神识秘术</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">惊蛰十二变</span>
+                                <span class="text-xs px-2 py-1 bg-teal-100 text-teal-800 rounded">变身功法</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 border border-gray-200">
+                        <h3 class="font-bold text-lg text-gray-800 mb-4 flex items-center">
+                            <i class="fas fa-star text-purple-500 mr-2"></i>
+                            仙界功法体系
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">大五行幻世诀</span>
+                                <span class="text-xs px-2 py-1 bg-purple-100 text-purple-800 rounded">主修功法</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">真言化轮经</span>
+                                <span class="text-xs px-2 py-1 bg-purple-100 text-purple-800 rounded">时间功法</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">天煞镇狱功</span>
+                                <span class="text-xs px-2 py-1 bg-purple-100 text-purple-800 rounded">炼体功法</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-700">炼神术</span>
+                                <span class="text-xs px-2 py-1 bg-purple-100 text-purple-800 rounded">神识秘术</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 综合规律卡片 -->
+            <div class="card md:col-span-4 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-green"></div>
+                <div class="flex items-center mb-6">
+                    <i class="fas fa-lightbulb text-3xl text-green-500 mr-4"></i>
+                    <h2 class="text-2xl font-bold text-gray-800">综合规律总结</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg p-4 border border-gray-200">
+                            <h3 class="font-bold text-gray-800 mb-2">境界提升时间规律</h3>
+                            <p class="text-sm text-gray-600">韩立的境界提升时间呈现出明显的加速后减速趋势。早期阶段提升相对较快，随着境界的提升，修炼速度逐渐放缓。</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 border border-gray-200">
+                            <h3 class="font-bold text-gray-800 mb-2">战力增长模式特征</h3>
+                            <p class="text-sm text-gray-600">韩立的战力增长模式呈现出"阶梯式跃升"的特征，每个大境界的突破都会带来战力的质的飞跃，展现出越级战斗的能力。</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-lg p-4 border border-gray-200">
+                            <h3 class="font-bold text-gray-800 mb-2">性格特质对成长的影响</h3>
+                            <p class="text-sm text-gray-600">韩立的心智坚韧、心思缜密、谨慎理智等性格特质对其修仙成长产生了决定性影响，是他成功的重要保障。</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 border border-gray-200">
+                            <h3 class="font-bold text-gray-800 mb-2">独特修仙路径特征</h3>
+                            <p class="text-sm text-gray-600">韩立的修仙路径具有鲜明的个人特色，形成了独特的"韩立模式"，包括循序渐进的功法体系、多元化的能力发展等。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 结论卡片 -->
+            <div class="card md:col-span-4 p-8 flex flex-col justify-center items-center text-center relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-purple"></div>
+                <i class="fas fa-crown text-5xl text-purple-500 mb-6"></i>
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">结论与启示</h2>
+                <p class="text-lg text-gray-700 max-w-4xl mb-6">
+                    韩立从一个山村少年成长为三界至尊的历程，展现了"凡人修仙"的真正内涵。他的成功并非依靠天赋异禀或奇遇连连，而是凭借坚韧的意志、谨慎的态度、系统的方法和持续的努力。这种"凡人"特质恰恰是其最可贵之处，也为广大读者提供了深刻的启示。
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="px-6 py-3 bg-purple-100 text-purple-800 rounded-full font-medium">目标明确</div>
+                    <div class="px-6 py-3 bg-purple-100 text-purple-800 rounded-full font-medium">方法科学</div>
+                    <div class="px-6 py-3 bg-purple-100 text-purple-800 rounded-full font-medium">资源整合</div>
+                    <div class="px-6 py-3 bg-purple-100 text-purple-800 rounded-full font-medium">品格坚韧</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // 境界成长时间图表
+    const ageCtx = document.getElementById('ageChart').getContext('2d');
+    const ageChart = new Chart(ageCtx, {
+        type: 'line',
+        data: {
+            labels: ['炼气', '筑基', '结丹', '元婴', '化神', '炼虚', '合体', '大乘', '真仙', '金仙', '太乙', '大罗', '道祖'],
+            datasets: [{
+                label: '韩立境界成长年龄',
+                data: [21, 51, 199, 360, 885, 1420, 1567, 2468, 11190, 13000, 17000, 20000, 30000],
+                borderColor: '#22C55E',
+                backgroundColor: 'rgba(34, 197, 94, 0.1)',
+                borderWidth: 3,
+                pointBackgroundColor: '#22C55E',
+                pointRadius: 5,
+                tension: 0.4,
+                fill: true
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            scales: {
+                y: {
+                    type: 'logarithmic',
+                    ticks: {
+                        color: '#6B7280',
+                        font: {
+                            size: 10
+                        }
+                    },
+                    grid: {
+                        color: '#E5E7EB'
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: '#6B7280',
+                        font: {
+                            size: 10
+                        }
+                    },
+                    grid: {
+                        color: '#E5E7EB'
+                    }
+                }
+            }
+        }
+    });
+</script>
+</html>
